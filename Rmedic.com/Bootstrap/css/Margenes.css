@@ -1,0 +1,67 @@
+﻿
+.masgrande{
+	font-size:4em;
+}
+.exe{
+	font-size:1ex;
+}
+#menu1 ol li{
+	list-style: none;
+	display:inline;
+	margin:0px 100px 0px  0px;
+	width:100px;
+	height:22px;
+	background-color:#ffff00;
+	border-style: inset;
+	border-radius: 15px 15px 15px 15px;
+
+}
+.caja{
+	border-width:2px;
+	border-style:dashed;
+}
+
+#principal{
+	width:800px;
+	margin:0 auto;
+	background-color:#ff0000;
+}
+#cabecera{
+	width:100%;
+	height:150px;
+	border:1px solid #ccc;
+}
+#menu1{
+	
+    height:100%;
+	border:1px solid #ccc;
+    margin:0 auto;
+	
+}
+#contenido{
+	width:645px;
+	float:left;
+	border:1px solid #ccc;
+}
+#pie{
+	width:100%;
+	height:150px;
+	border:1px solid #ccc;
+	clear:both;
+    background-color:#5bbfd8;
+}
+#cabecera img{
+
+    width:100%;
+	height:150px;
+}
+#log {
+ float:inherit;
+ margin-right:0 auto;
+ 
+}
+#usu{
+    float:right;
+    margin: 0 auto;
+
+}

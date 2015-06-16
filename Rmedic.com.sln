@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rmedic.com", "Rmedic.com\Rmedic.com.csproj", "{D326EDB7-FF92-43EC-A86E-9A4398D53C2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{8C3AB86D-B00C-4506-9127-22C81A2A298F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{D2364531-BFC5-4FE8-976B-4B9374FE9E2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D326EDB7-FF92-43EC-A86E-9A4398D53C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D326EDB7-FF92-43EC-A86E-9A4398D53C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D326EDB7-FF92-43EC-A86E-9A4398D53C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D326EDB7-FF92-43EC-A86E-9A4398D53C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C3AB86D-B00C-4506-9127-22C81A2A298F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C3AB86D-B00C-4506-9127-22C81A2A298F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C3AB86D-B00C-4506-9127-22C81A2A298F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C3AB86D-B00C-4506-9127-22C81A2A298F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2364531-BFC5-4FE8-976B-4B9374FE9E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2364531-BFC5-4FE8-976B-4B9374FE9E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2364531-BFC5-4FE8-976B-4B9374FE9E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2364531-BFC5-4FE8-976B-4B9374FE9E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
