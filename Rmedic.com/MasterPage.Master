@@ -43,6 +43,8 @@
 					<li><a href="ControlPanel/Registros/rSistemaFisiologico.aspx">Sistema Fisiologico</a></li>
                     <li><a href="ControlPanel/Registros/rRevisionXSistemas.aspx">Revision de Paciente</a></li>
                     <li><a href="ControlPanel/Registros/rMedicamentos.aspx">Medicamentos</a></li>
+                    <li><a href="ControlPanel/Registros/rRecetas.aspx">Medicamentos</a></li>
+
 
 				</ul>
 			</li>
