@@ -28,7 +28,7 @@
     <form id="form1" runat="server">
      
   <div id="cabecera">
-      <img src="img/CabeceraP.png" />
+      <img src="/img/CabeceraP.png" />
           </div>
      
         
@@ -36,14 +36,14 @@
        
 	<nav margin:"left" class="auto-style5">
 		<ul class="menu">
-			<li><a href="default.aspx"><span class="iconic home"></span> Inicio</a></li>
+			<li><a href="/default.aspx"><span class="iconic home"></span> Inicio</a></li>
 			<li><a href="#"><span class="iconic plus-alt"></span> Registros</a>
 				<ul>
-					<li><a href="ControlPanel/Registros/rPacientes.aspx">Pacientes</a></li>
-					<li><a href="ControlPanel/Registros/rSistemaFisiologico.aspx">Sistema Fisiologico</a></li>
-                    <li><a href="ControlPanel/Registros/rRevisionXSistemas.aspx">Revision de Paciente</a></li>
-                    <li><a href="ControlPanel/Registros/rMedicamentos.aspx">Medicamentos</a></li>
-                    <li><a href="ControlPanel/Registros/rRecetas.aspx">Medicamentos</a></li>
+					<li><a href="/ControlPanel/Registros/rPacientes.aspx">Pacientes</a></li>
+					<li><a href="/ControlPanel/Registros/rSistemaFisiologico.aspx">Sistema Fisiologico</a></li>
+                    <li><a href="/ControlPanel/Registros/rRevisionXSistemas.aspx">Revision de Paciente</a></li>
+                    <li><a href="/ControlPanel/Registros/rMedicamentos.aspx">Medicamentos</a></li>
+                    <li><a href="/ControlPanel/Registros/rRecetas.aspx">Recetas</a></li>
 
 
 				</ul>
@@ -51,9 +51,9 @@
 			<li><a href="#"><span class="iconic magnifying-glass"></span> Consultas</a>
 				<ul>
                     
-					<li><a href="ControlPanel/Consultas/fPacientes.aspx">Pacientes</a></li>
-					<li><a href="ControlPanel/Consultas/fSistemasFisio.aspx">Sistema Fisiologico</a></li>
-					<li><a href="ControlPanel/Consultas/fRevisionSistemas.aspx">Revision de Paciente</a></li>
+					<li><a href="/ControlPanel/Consultas/fPacientes.aspx">Pacientes</a></li>
+					<li><a href="/ControlPanel/Consultas/fSistemasFisio.aspx">Sistema Fisiologico</a></li>
+					<li><a href="/ControlPanel/Consultas/fRevisionSistemas.aspx">Revision de Paciente</a></li>
                     
                     
 				</ul>
@@ -85,15 +85,15 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
             <div id="contenido"> <p class="auto-style4">
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <asp:Image ID="Image1" runat="server" />
+                <br/><br/>
 					     
 					</p></div>
            
           
            
         </asp:ContentPlaceHolder>
-
-         <div id="pie"></div>
 
     </form>
 

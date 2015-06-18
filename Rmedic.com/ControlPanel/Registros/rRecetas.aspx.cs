@@ -14,31 +14,31 @@ namespace Rmedic.com.ControlPanel.Registros
         Recetas rec = new Recetas();
         DataTable detalle = new DataTable();
 
-        int IdRevicionPaciente;
+        int IdRevicionPaciente=0;
         int paciente = 0;
-        int sistema = 0;
-        int revisioPaciente = 0;
+        int Medicamento = 0;
+        int RecetaDetalle = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
 
 
-            //int.TryParse(DdlPaciente.SelectedValue, out paciente);
-            //int.TryParse(DdlSistema.SelectedValue, out sistema);
-            //if(rec.BuscarIdRevision()){
-            //    revisioPaciente = rec.IdRevision;
-            //}
+            int.TryParse(DdlPaciente.SelectedValue, out paciente);
+            int.TryParse(DdlMedicamento.SelectedValue, out Medicamento);
+         
 
-            //if (!IsPostBack)
-            //{
+           
+            if (!IsPostBack)
+            {
 
-            //    int.TryParse(Request.QueryString["IdRevisionPaciente"], out IdRevicionPaciente);
+                int.TryParse(Request.QueryString["IdRevisionPaciente"], out IdRevicionPaciente);
 
-            //    if(rec.Buscar(IdRevicionPaciente.ToString())){
-            //        TextBoxIdRevision.Text = rec.IdRevision.ToString();
-            //        DdlPaciente.SelectedValue = rec.IdPaciente.ToString();
-            //        TbFecha.Text = rec.Fecha.ToString("MM/dd/yyyy");
+                if (rec.Buscar(IdRevicionPaciente.ToString()))
+                {
+             
+                    DdlPaciente.SelectedValue = rec.IdPaciente.ToString();
+                    TbFecha.Text = rec.Fecha.ToString("MM/dd/yyyy");
 
-            //    }
+                }
                 DdlPaciente.DataSource = Pacientes.Lista("Nombre,IdPaciente", "Pacientes");
                 DdlPaciente.DataValueField = "IdPaciente";
                 DdlPaciente.DataTextField = "Nombre";
@@ -48,10 +48,12 @@ namespace Rmedic.com.ControlPanel.Registros
                 DdlMedicamento.DataValueField = "IdMedicamento";
                 DdlMedicamento.DataTextField = "Nombre";
                 DdlMedicamento.DataBind();
+
+             
                 
 
 
-            //}
+            }
 
         }
 
@@ -59,15 +61,15 @@ namespace Rmedic.com.ControlPanel.Registros
         {
            
            
-            if (TextBoxIdRevision.Text == string.Empty)
+            if (TextBoxIdRecetas.Text == string.Empty)
                   {
 
-                RevisionPacientes RevP = new RevisionPacientes();
+                Recetas RevP = new Recetas();
 
                 
-                if (Session["Paciente"] != null)
+                if (Session["Recetas"] != null)
                 {
-                    RevP = (RevisionPacientes)Session["Paciente"];
+                    RevP = (Recetas)Session["Recetas"];
                 }
                 RevP.IdPaciente = paciente;
                 RevP.Fecha = Convert.ToDateTime(TbFecha.Text);
@@ -88,19 +90,18 @@ namespace Rmedic.com.ControlPanel.Registros
 
         protected void BtnADD_Click(object sender, EventArgs e)
         {
-            RevisionPacientes RevP = new RevisionPacientes();
-
-            if (Session["Paciente"] != null)
+            Recetas RevP = new Recetas();
+            if (Session["Recetas"] != null)
             {
-                RevP = (RevisionPacientes)Session["Paciente"];
+                RevP = (Recetas)Session["Recetas"];
             }
 
-            RevP.AgregarDetalle(revisioPaciente, sistema, TbEstado.Text);
+            RevP.AgregarDetalle(Medicamento,TextBoxFrecuencia.Text,Convert.ToInt32(TextBoxCantidad.Text));
 
-            GvDetalle.DataSource = RevP.Detalle;
+            GvDetalle.DataSource = RevP.recetasDetalles;
             GvDetalle.DataBind();
 
-            Session["Paciente"] = RevP;
+            Session["Recetas"] = RevP;
            
            
 
@@ -109,4 +110,3 @@ namespace Rmedic.com.ControlPanel.Registros
 
     }
     }
-}

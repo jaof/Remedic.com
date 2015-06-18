@@ -18,18 +18,14 @@ namespace Rmedic.com.ControlPanel.Registros
             {
 
 
-                //int.TryParse(Request.QueryString["IdSistemaFisio"], out IdMedicamento);
+                int.TryParse(Request.QueryString["IdSistemaFisio"], out IdMedicamento);
 
-                //if (med.Buscar(IdMedicamento))
-                //{
-
-
-                //    TbIdSistema.Text = (IdSistema).ToString();
-                //    TbSistema.Text = sis.Sistema;
+                
 
                     btnGuardar.Text = "Actualizar";
                     btnEliminar.Visible = true;
 
+                
                 }
             }
 

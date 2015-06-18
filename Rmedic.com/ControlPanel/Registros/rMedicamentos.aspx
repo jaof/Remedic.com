@@ -39,11 +39,11 @@
           </td>
           <td>
               <strong>
-              <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Sistema no Puede Estar Vacio" ControlToValidate="TbNombre" CssClass="auto-style8">*</asp:RequiredFieldValidator>
+              <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Sistema no Puede Estar Vacio"  CssClass="auto-style8" ControlToValidate="TbNombre">*</asp:RequiredFieldValidator>
               </strong>
           </td>
          
-              <asp:TextBox ID="TbNombre0" class="form-control"  runat="server"></asp:TextBox>
+           
          
       </td>
           </tr>

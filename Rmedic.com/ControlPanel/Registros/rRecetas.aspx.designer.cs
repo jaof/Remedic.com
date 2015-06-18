@@ -13,13 +13,13 @@ namespace Rmedic.com.ControlPanel.Registros {
     public partial class rRecetas {
         
         /// <summary>
-        /// TextBoxIdRevision control.
+        /// TextBoxIdRecetas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxIdRevision;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxIdRecetas;
         
         /// <summary>
         /// Label1 control.
@@ -58,15 +58,6 @@ namespace Rmedic.com.ControlPanel.Registros {
         protected global::System.Web.UI.WebControls.DropDownList DdlPaciente;
         
         /// <summary>
-        /// DdlRecetaDetalle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DdlRecetaDetalle;
-        
-        /// <summary>
         /// DdlMedicamento control.
         /// </summary>
         /// <remarks>
@@ -76,6 +67,24 @@ namespace Rmedic.com.ControlPanel.Registros {
         protected global::System.Web.UI.WebControls.DropDownList DdlMedicamento;
         
         /// <summary>
+        /// TextBoxFrecuencia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxFrecuencia;
+        
+        /// <summary>
+        /// TextBoxCantidad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxCantidad;
+        
+        /// <summary>
         /// BtnADD control.
         /// </summary>
         /// <remarks>
@@ -83,6 +92,15 @@ namespace Rmedic.com.ControlPanel.Registros {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnADD;
+        
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
         
         /// <summary>
         /// GvDetalle control.
