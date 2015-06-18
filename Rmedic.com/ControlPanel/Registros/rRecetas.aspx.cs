@@ -24,9 +24,12 @@ namespace Rmedic.com.ControlPanel.Registros
 
             int.TryParse(DdlPaciente.SelectedValue, out paciente);
             int.TryParse(DdlMedicamento.SelectedValue, out Medicamento);
-         
 
-           
+
+            if (rec.BuscarIdReceta())
+            {
+                RecetaDetalle = rec.IdReceta;
+            }
             if (!IsPostBack)
             {
 
@@ -59,7 +62,7 @@ namespace Rmedic.com.ControlPanel.Registros
 
         protected void BtnGuardar_Click(object sender, EventArgs e)
         {
-           
+            
            
             if (TextBoxIdRecetas.Text == string.Empty)
                   {
@@ -96,7 +99,7 @@ namespace Rmedic.com.ControlPanel.Registros
                 RevP = (Recetas)Session["Recetas"];
             }
 
-            RevP.AgregarDetalle(Medicamento,TextBoxFrecuencia.Text,Convert.ToInt32(TextBoxCantidad.Text));
+            RevP.AgregarDetalle(Medicamento, TextBoxFrecuencia.Text, Convert.ToInt32(TextBoxCantidad.Text), RecetaDetalle);
 
             GvDetalle.DataSource = RevP.recetasDetalles;
             GvDetalle.DataBind();
