@@ -2,11 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style6 {
-            width: 722px;
+            width: 715px;
             height: 55px;
-        }
-        .auto-style7 {
-            color: #0000FF;
         }
         .auto-style9 {
             width: 145px;
@@ -19,10 +16,7 @@
             height: 28px;
         }
         .auto-style14 {
-            width: 149px;
-            height: 28px;
-        }
-        .auto-style15 {
+            width: 104px;
             height: 28px;
         }
         .auto-style16 {
@@ -30,7 +24,7 @@
             height: 28px;
         }
         .auto-style17 {
-            width: 149px;
+            width: 104px;
             height: 31px;
         }
         .auto-style18 {
@@ -41,17 +35,28 @@
             width: 834px;
             height: 31px;
         }
+        .auto-style20 {
+            width: 534px;
+            margin-left:18px;
+        }
+        .auto-style21 {
+            width: 13px;
+            height: 28px;
+        }
     </style> 
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <link rel="stylesheet" href="Bootstrap\css\bootstrap.css" >
-    <span class="auto-style7"><strong><em style="text-align: center">Consulta De Pacientes</em></strong></span><table>
+    <p>
+
+    </p>
+     <table>
 
         <tr>
             <td class="auto-style6">
 
-    <table>
+    <table class="auto-style20">
 
         <tr>
             <td class="auto-style17">
@@ -75,7 +80,7 @@
         <tr>
             <td class="auto-style14">
 
-                <asp:DropDownList ID="TipoDropDownList" class="form-control" runat="server" Height="28px" Width="143px">
+                <asp:DropDownList ID="TipoDropDownList" class="form-control" runat="server" Height="28px" Width="170px">
                     <asp:ListItem>Nombre</asp:ListItem>
                     <asp:ListItem>Apellido</asp:ListItem>
                     <asp:ListItem>Cedula</asp:ListItem>
@@ -92,17 +97,17 @@
 
             <td class="auto-style9">
 
-                <asp:TextBox ID="TextBoxDesde" class="form-control" runat="server" Width="208px" TextMode="Date" Height="28px"></asp:TextBox>
+                <asp:TextBox ID="TextBoxDesde" class="form-control" runat="server" Width="140px" TextMode="Date" Height="28px"></asp:TextBox>
 
             </td>
 
-            <td class="auto-style15">
+            <td class="auto-style21">
 
                 Hasta</td>
 
             <td class="auto-style16">
 
-                <asp:TextBox ID="TextBoxHasta" class="form-control" runat="server" Width="172px" TextMode="Date" Height="28px"></asp:TextBox>
+                <asp:TextBox ID="TextBoxHasta" class="form-control" runat="server" Width="140px" TextMode="Date" Height="28px"></asp:TextBox>
 
             </td>
 

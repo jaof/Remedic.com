@@ -4,11 +4,11 @@
     <style type="text/css">
         .auto-style4 {
             width: 71px;
-            text-align:left;
-            height: 41px;
+            height: 42px;
         }
         .auto-style5 {
             height: 42px;
+     
         }
         .auto-style6 {
             height: 42px;
@@ -19,19 +19,20 @@
             width: 73px;
         }
         .auto-style8 {
-            height: 41px;
+            height: 42px;
             width: 73px;
         }
         .auto-style9 {
-            height: 18px;
-            margin-top: 18;
+            height: 16px;
+    
         }
         .auto-style10 {
-            margin-top: 17;
+         margin-left:18px;
         }
         .auto-style11 {
             height: 44px;
             width: 348px;
+            margin-left:18px;
         }
         .auto-style12 {
             width: 250px;
@@ -44,6 +45,17 @@
         }
         .auto-style14 {
             color: #FF0000;
+        }
+        .auto-style15 {
+            height: 35px;
+        }
+        .auto-style16 {
+            height: 118px;
+            margin-left:18px;
+        }
+        .auto-style17 {
+            height: 40px;
+            margin-left:110px;
         }
     </style>
     </asp:Content>
@@ -90,7 +102,7 @@
             </td>
             <td class="auto-style13">
 
-                <asp:DropDownList ID="DdlPaciente" runat="server" class="form-control" Height="28px">
+                <asp:DropDownList ID="DdlPaciente" runat="server" class="form-control" Height="28px" Width="219px">
                 </asp:DropDownList>
 
             
@@ -107,6 +119,7 @@
             </td>
         </tr>
     </table>
+    <h1 class="auto-style15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Revision Detalles</h1>
     <p class="auto-style9">
         &nbsp;&nbsp;&nbsp;
         Sistema&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Estado
@@ -124,7 +137,8 @@
           <asp:Button ID="BtnADD" class="btn btn-primary" runat="server" Text="Agregar"  Height="28px" OnClick="BtnADD_Click" />
         </td>
         </table>
-    <asp:GridView ID="GvDetalle" runat="server" Width="1154px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
+    <div class="auto-style16">
+    <asp:GridView ID="GvDetalle" runat="server" Width="1177px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
         <FooterStyle BackColor="White" ForeColor="#000066" />
         <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
         <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
@@ -135,13 +149,14 @@
         <SortedDescendingCellStyle BackColor="#CAC9C9" />
         <SortedDescendingHeaderStyle BackColor="#00547E" />
     </asp:GridView>
-      <h1>
+        </div>
+      <div class="auto-style17">
 
           <asp:Button ID="BtnLimpiar" class="btn btn-primary" runat="server" Text="Limpiar" OnClick="BtnGuardar_Click" />
 
           <asp:Button ID="BtnGuardar" class="btn btn-primary" runat="server" Text="Guarar" OnClick="BtnGuardar_Click" />
 
           <asp:Button ID="BtnEliminar" class="btn btn-primary" runat="server" Text="Eliminar" OnClick="BtnGuardar_Click" />
-      </h1>
+      </div>
 
 </asp:Content>

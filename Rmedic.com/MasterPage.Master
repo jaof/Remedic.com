@@ -58,15 +58,15 @@
                     
 				</ul>
 			</li>
-			<li><a href="#"><span class="iconic map-pin"></span> Products</a>
-			</li>
-			<li><a href="#"><span class="iconic mail"></span> Contact</a>
+			
+			<li><a href="#"><span class="iconic mail"></span>Informacion</a>
 				<ul>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Directions</a></li>
+					<li><a href="#">Telefono</a></li>
+					<li><a href="#">Direccion</a></li>
 				</ul>
                 
 			</li>
+
             			
                 
 		</ul>
@@ -74,7 +74,7 @@
               <asp:Label ID="Label1" runat="server" Text="Usuario" Visible="True"></asp:Label> 
             <asp:Label ID="Lusuario" runat="server" Font-Bold="True" Font-Names="Arial" Text="DESCONECTADO"></asp:Label>
 
-            <asp:Button ID="BtnSeccion" Class="btn btn-primary" runat="server" Text="Inicio Sesion" OnClick="BtnSalir_Click" Height="26px" />
+            <asp:Button ID="BtnSeccion" Class="btn btn-primary" runat="server" Text="Inicio Sesion" OnClick="BtnSalir_Click" Height="29px" />
         
         </div>
 		<div class="clearfix"></div>
@@ -86,15 +86,14 @@
 
             <div id="contenido"> <p class="auto-style4">
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                <asp:Image ID="Image1" runat="server" />
                 <br/><br/>
 					     
 					</p></div>
            
-          
+     
            
         </asp:ContentPlaceHolder>
-
+        <div id="pie"></div>
     </form>
 
 </body>

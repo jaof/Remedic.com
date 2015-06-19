@@ -6,12 +6,17 @@
         }
         .auto-style7 {
             width: 569px;
+            margin-left:18px;
         }
         .auto-style8 {
             color: #FF0000;
         }
         .auto-style9 {
-            width: 317px
+            width: 220px
+        }
+        .auto-style10 {
+            height: 38px;
+            margin-left:110px;
         }
     </style>
 </asp:Content>
@@ -22,7 +27,7 @@
       <td class="auto-style6">
           <asp:Label ID="Label1" runat="server" Text="IdSistema"></asp:Label>
           <td class="auto-style9">
-              <asp:TextBox ID="TbIdSistema" class="form-control" runat="server" Width="290px"></asp:TextBox>
+              <asp:TextBox ID="TbIdSistema" class="form-control" runat="server" Width="218px" Height="28px"></asp:TextBox>
           </td>
           <td>
        <asp:Button ID="btnConsulta" class="btn btn-primary" runat="server" Text="Consulta" CausesValidation="False" OnClick="btnConsulta_Click" PostBackUrl="~/ControlPanel/Consultas/fSistemasFisio.aspx" />
@@ -32,7 +37,7 @@
       <td class="auto-style6">
           <asp:Label ID="Label2" runat="server" Text="Sistema"></asp:Label>
           <td class="auto-style9">
-              <asp:TextBox ID="TbSistema" class="form-control"  runat="server"></asp:TextBox>
+              <asp:TextBox ID="TbSistema" class="form-control"  runat="server" Height="28px" Width="219px"></asp:TextBox>
           </td>
           <td>
               <strong>
@@ -50,13 +55,13 @@
         </tr>
   </table>
            
-
+    <div class="auto-style10">
         <asp:Button ID="btnLimpiar" class="btn btn-primary" runat="server" Text="Limpiar"  />
        <asp:Button ID="btnGuardar" class="btn btn-primary" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
         <asp:Button ID="btnEliminar" class="btn btn-primary" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" Visible="False" />
        
 
-     
+     </div>
      
 
 </asp:Content>

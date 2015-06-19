@@ -21,6 +21,7 @@
         .auto-style41 {
         width: 38%;
         height: 370px;
+        margin-left:20px;
     }
     .auto-style57 {
         width: 541px;
@@ -34,29 +35,9 @@
         width: 919px;
         height: 41px;
     }
-    .auto-style60 {
-        width: 541px;
-        height: 42px;
-    }
-    .auto-style61 {
-        width: 228px;
-        height: 42px;
-    }
-    .auto-style62 {
-        width: 919px;
-        height: 42px;
-    }
-        .auto-style63 {
-            width: 541px;
-            height: 54px;
-        }
-        .auto-style64 {
-            width: 228px;
-            height: 54px;
-        }
-        .auto-style65 {
-            width: 919px;
-            height: 54px;
+        .auto-style60 {
+            height: 41px;
+            margin-left:110px;
         }
     </style>
     
@@ -64,17 +45,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <link rel="stylesheet" href="Bootstrap\css\bootstrap.css">
     <link rel ="stylesheet" href="..\Scripts\toastr.min.js"></link>
-        <table>
-        </table>
+        <p></p>
     
     <table table" height: 375px;" class="auto-style41">
        
             <tr>
-                <td class="auto-style63">IdPaciente</td>
-                <td class="auto-style64">
+                <td class="auto-style57">IdPaciente</td>
+                <td class="auto-style58">
                     <asp:TextBox ID="TextBoxIdPaciente" runat="server" class="form-control" Height="28px" Width="219px" ></asp:TextBox>
                 </td>
-                <td class="auto-style65">
+                <td class="auto-style59">
        <asp:Button ID="btnConsulta" class="btn btn-primary" runat="server" Text="Consulta" CausesValidation="False" OnClick="btnConsulta_Click" PostBackUrl="~/ControlPanel/Consultas/fPacientes.aspx"  />
                 </td>
             </tr>
@@ -140,11 +120,11 @@
                     </td>
             </tr>
             <tr>
-                <td class="auto-style60">Fecha Salida</td>
-                <td class="auto-style61">
+                <td class="auto-style57">Fecha Salida</td>
+                <td class="auto-style58">
                     <asp:TextBox ID="TextBoxFechaIng" class="form-control" runat="server" Width="219px" TextMode="Date" Height="28px"></asp:TextBox>
                 </td>
-                <td class="auto-style62">
+                <td class="auto-style59">
                     </td>
             </tr>
             <tr>
@@ -161,7 +141,7 @@
             <tr>
                 <td class="auto-style35">Ocupacion</td>
                 <td class="auto-style36">
-                    <asp:TextBox ID="TextBoxOcupacion" runat="server" class="form-control" Width="219px"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxOcupacion" runat="server" class="form-control" Width="219px" Height="28px"></asp:TextBox>
                 </td>
                 <td class="auto-style37">
                  
@@ -171,12 +151,12 @@
     
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" style="color: #FF0000" />
        
-
+    <h1 class="auto-style60">
         <asp:Button ID="btnLimpiar" class="btn btn-primary" runat="server" Text="Limpiar" OnClick="btnLimpiar_Click" />
        <asp:Button ID="btnGuardar" class="btn btn-primary" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
         <asp:Button ID="btnEliminar" class="btn btn-primary" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" Visible="False" />
        
 
-     
+     </h1>
      
 </asp:Content>
